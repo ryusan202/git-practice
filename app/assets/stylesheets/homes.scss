@@ -1,0 +1,19 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.bg-dark{
+    background-color: #343a40
+}
+.Loginbotton{
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+.navbar {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.navbar-expand{-sm|md|-lg|-xl|-xxl} 

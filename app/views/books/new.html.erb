@@ -1,0 +1,10 @@
+
+ <%= form_with model: @book, url: '/book', method: :post do |f| %>
+  <h4>title</h4>
+  <%= f.text_field :title %>
+  
+  <h4>title</h4>
+  <%= f.text_area :body %>
+  
+  <p><%= f.submit '保存' %></p>
+<% end %>
