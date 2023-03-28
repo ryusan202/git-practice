@@ -1,18 +1,17 @@
-<div class="row">
-    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
-     
 
+<p id="notice"></p>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+    <h2>User info</h2>
 <% if @user.errors.any? %>
-  <%= @user.errors.count %>件のエラーが発生しました
+  <%= @user.errors.count %>error prohibited this obj from being saved:
   <ul>
     <% @user.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
 <% end %>
-
-
-<h1>User Info</h1>
  <tr> <%= form_with model: @user do |f| %>
   <label for="inputName">Name</label>
    <p> <%= f.text_field :name, autofocus: true, placeholder:"名前"%></p>
@@ -27,7 +26,6 @@
    
 <% end %>
 </tr>
-</table>
 </div>
 </div>
-
+</div>
